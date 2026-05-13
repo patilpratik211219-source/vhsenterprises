@@ -5,94 +5,368 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VHS Enterprises</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f7f9fc;
+color:#222;
 }
 
-header {
-    background: #0a1f44;
-    color: white;
-    padding: 20px;
-    text-align: center;
+header{
+background:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-nav {
-    background: #ff6600;
-    padding: 10px;
-    text-align: center;
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
 }
 
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
+.logo img{
+height:60px;
 }
 
-.hero {
-    background: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc') no-repeat center;
-    background-size: cover;
-    height: 400px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: bold;
+.logo-text h1{
+margin:0;
+font-size:28px;
+color:#003366;
 }
 
-.section {
-    padding: 40px;
-    text-align: center;
+.logo-text p{
+margin:0;
+font-size:14px;
+color:#666;
 }
 
-.footer {
-    background: #0a1f44;
-    color: white;
-    padding: 20px;
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#003366;
+font-weight:bold;
 }
+
+.hero{
+background:linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+background-size:cover;
+background-position:center;
+height:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.section{
+padding:70px 10%;
+background:white;
+margin-bottom:20px;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#003366;
+font-size:36px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#f7f9fc;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.card h3{
+margin-top:15px;
+color:#003366;
+}
+
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.contact-item{
+background:#f7f9fc;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.contact-item i{
+font-size:35px;
+color:#003366;
+margin-bottom:10px;
+}
+
+.social-icons{
+text-align:center;
+margin-top:30px;
+}
+
+.social-icons a{
+margin:0 10px;
+font-size:28px;
+color:#003366;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+z-index:1000;
+}
+
+.email-float{
+position:fixed;
+bottom:95px;
+right:25px;
+background:#003366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+z-index:1000;
+}
+
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>VHS Enterprises</h1>
-    <p>Your Safety Partner</p>
-</header>
+
+<div class="logo">
+<img src="logo.png" alt="Logo">
+
+<div class="logo-text">
+<h1>VHS Enterprises</h1>
+<p>Safety Beyond Compliance</p>
+</div>
+</div>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+<a href="#about">About Us</a>
+<a href="#products">Products & Services</a>
+<a href="#blogs">Blogs</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact Us</a>
 </nav>
 
-<div class="hero">
-    SAFETY FIRST. ALWAYS.
+</header>
+
+<section class="hero">
+<div>
+<h2>Industrial Safety Solutions</h2>
+<p>Professional Safety, Consultancy & Operational Excellence Services</p>
+</div>
+</section>
+
+<section class="section" id="about">
+
+<h2>About Us</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Who We Are</h3>
+<p>
+At VHS Enterprises, we are committed to creating safer, smarter, and more efficient workplaces through world-class industrial safety products and operational solutions.
+</p>
 </div>
 
-<div class="section">
-    <h2>About Us</h2>
-    <p>We provide high-quality fall protection and PPE solutions for industrial safety.</p>
+<div class="card">
+<h3>Our Vision</h3>
+<p>
+To become a trusted one-stop solution provider for workplace safety, operational excellence, and sustainability.
+</p>
 </div>
 
-<div class="section">
-    <h2>Our Products</h2>
-    <p>Harness, Lifelines, SRL, Anchors, Helmets, Gloves and more.</p>
+<div class="card">
+<h3>Our Mission</h3>
+<p>
+To deliver high-quality products and consultancy services that empower customers to achieve business goals efficiently.
+</p>
 </div>
 
-<div class="section">
-    <h2>Contact Us</h2>
-    <p>Email: info@vhse.in</p>
+<div class="card">
+<h3>Our Values</h3>
+<p>
+Safety First, Customer Commitment, Excellence, Innovation, Integrity & Continuous Improvement.
+</p>
 </div>
 
-<div class="footer">
-    © 2026 VHS Enterprises
 </div>
+</section>
+
+<section class="section" id="products">
+
+<h2>Products & Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952">
+<h3>Fall Protection</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+<h3>Lifeline Systems</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab10380f2a7">
+<h3>Personal Protective Equipment</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
+<h3>Fire Prevention</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<h3>Road Safety</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+<h3>Safety Signages</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<h3>Operational & Environmental Consultancy</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<div class="contact-item">
+<i class="fa-solid fa-phone"></i>
+<h3>Mobile</h3>
+<p>+91 9156169392</p>
+</div>
+
+<div class="contact-item">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>info@vhse.co.in</p>
+</div>
+
+<div class="contact-item">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Address</h3>
+<p>787, C/3, Ramanand Nagar, Kolhapur, Maharashtra 416007</p>
+</div>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/vhsenterprises9392/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://x.com/vhsEnterprise09" target="_blank">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/vhsenterprises" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 VHS Enterprises. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/919156169392"
+target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a class="email-float"
+href="mailto:info@vhse.co.in">
+<i class="fa-solid fa-envelope"></i>
+</a>
 
 </body>
 </html>
