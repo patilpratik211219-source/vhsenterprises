@@ -1,77 +1,409 @@
-* {
-.contact-card h3 {
-    margin-bottom: 20px;
-    color: #0b1f3a;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-.contact-item {
-    margin-bottom: 18px;
-    font-size: 17px;
+body{
+background:#f5f7fa;
+color:#222;
+line-height:1.6;
 }
 
-.footer {
-    background: #0b1f3a;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
+header{
+background:#0b1f3a;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.floating-buttons {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    z-index: 999;
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
 }
 
-.floating-buttons a {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+.logo-area img{
+height:65px;
 }
 
-.whatsapp-btn {
-    background: #25D366;
+.logo-text h1{
+color:#fff;
+font-size:30px;
 }
 
-.call-btn {
-    background: #007bff;
+.logo-text p{
+color:#ccc;
+font-size:14px;
 }
 
-.mail-btn {
-    background: #ff3b30;
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
 }
 
-@media(max-width: 992px) {
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
 
-header {
-    flex-direction: column;
-    gap: 15px;
+nav ul li a:hover{
+color:#00a8ff;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/hero-banner.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h2{
+font-size:55px;
+color:#fff;
+margin-bottom:20px;
+}
+
+.hero-content p{
+color:#fff;
+font-size:20px;
+max-width:900px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 32px;
+background:#00a8ff;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#0b1f3a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 18px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+margin-bottom:12px;
+color:#0b1f3a;
+}
+
+.card-content p{
+color:#555;
+font-size:15px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-grid img{
+width:100%;
+border-radius:12px;
+}
+
+.about-text h3{
+font-size:32px;
+margin-bottom:20px;
+color:#0b1f3a;
+}
+
+.founder{
+display:grid;
+grid-template-columns:320px 1fr;
+gap:40px;
+background:#fff;
+padding:40px;
+border-radius:12px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+align-items:center;
+}
+
+.founder img{
+width:100%;
+border-radius:12px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-box{
+background:#fff;
+padding:35px;
+border-radius:12px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.contact-box h3{
+margin-bottom:20px;
+color:#0b1f3a;
+}
+
+.contact-item{
+margin-bottom:18px;
+font-size:17px;
+}
+
+footer{
+background:#0b1f3a;
+color:#fff;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+.floating-icons{
+position:fixed;
+right:20px;
+bottom:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:999;
+}
+
+.floating-icons a{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:26px;
+color:#fff;
+box-shadow:0 5px 18px rgba(0,0,0,0.25);
+}
+
+.call{
+background:#007bff;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.mail{
+background:#ff3b30;
+}
+
+@media(max-width:992px){
+
+header{
+flex-direction:column;
+gap:15px;
 }
 
 .about-grid,
 .contact-grid,
-.founder-section {
-    grid-template-columns: 1fr;
+.founder{
+grid-template-columns:1fr;
 }
 
-.hero-content h2 {
-    font-size: 36px;
+.hero-content h2{
+font-size:38px;
 }
 
-nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
