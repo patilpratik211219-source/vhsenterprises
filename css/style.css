@@ -234,14 +234,23 @@ box-shadow:0 5px 18px rgba(0,0,0,0.25);
 
 .call{
 background:#007bff;
+color:white;
+font-size:28px;
+font-weight:bold;
 }
 
 .whatsapp{
 background:#25D366;
+color:white;
+font-size:28px;
+font-weight:bold;
 }
 
 .mail{
 background:#ff3b30;
+color:white;
+font-size:26px;
+font-weight:bold;
 }
 
 @media(max-width:992px){
