@@ -1,97 +1,213 @@
-<section class="section">
+<!DOCTYPE html>
+<html lang="en">
 
-<h2 class="section-title">Products & Services</h2>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="cards">
+<title>Products & Services | VHS Enterprises</title>
 
-<a href="products/fall-protection.html" class="card-link">
-<div class="card">
-<img src="images/fall-protection.jpg">
-<div class="card-content">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.products-page{
+padding:80px 8%;
+background:#f8fafc;
+min-height:100vh;
+}
+
+.products-title{
+text-align:center;
+font-size:42px;
+font-weight:700;
+margin-bottom:15px;
+color:#0f172a;
+}
+
+.products-subtitle{
+text-align:center;
+font-size:18px;
+color:#64748b;
+max-width:900px;
+margin:auto;
+margin-bottom:60px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+text-decoration:none;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.product-content{
+padding:25px;
+}
+
+.product-content h3{
+font-size:24px;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.product-content p{
+font-size:15px;
+line-height:1.7;
+color:#475569;
+}
+
+.view-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+.view-btn:hover{
+background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="products-page">
+
+<h1 class="products-title">
+Products & Services
+</h1>
+
+<p class="products-subtitle">
+Comprehensive Industrial Safety Products, Fire Protection Solutions, Safety Signages and EHS Consultancy Services for Safer, Smarter and Compliant Workplaces.
+</p>
+
+<div class="product-grid">
+
+<a href="products/fall-protection.html" class="product-card">
+
+<img src="images/fall-protection.jpg" alt="Fall Protection">
+
+<div class="product-content">
+
 <h3>Fall Protection Equipment & Lifeline Systems</h3>
-<p>Harnesses, retractable blocks, tripod systems, anchorages and lifeline systems.</p>
+
+<p>
+Safety Harnesses, Anchorages, Retractable Blocks, Tripods, Vertical and Horizontal Lifeline Systems for work-at-height safety.
+</p>
+
+<span class="view-btn">View Products</span>
+
 </div>
-</div>
+
 </a>
 
-<a href="products/ppe.html" class="card-link">
-<div class="card">
-<img src="images/ppe.jpg">
-<div class="card-content">
+
+<a href="products/ppe.html" class="product-card">
+
+<img src="images/ppe.jpg" alt="PPE">
+
+<div class="product-content">
+
 <h3>Personal Protective Equipment</h3>
-<p>Complete PPE solutions for head, eye, hand, foot, respiratory and body protection.</p>
+
+<p>
+Complete PPE solutions including helmets, goggles, gloves, safety shoes, body protection, respiratory and hearing protection.
+</p>
+
+<span class="view-btn">View Products</span>
+
 </div>
-</div>
+
 </a>
 
-<a href="products/signages.html" class="card-link">
-<div class="card">
-<img src="images/signages.jpg">
-<div class="card-content">
+
+<a href="products/signages.html" class="product-card">
+
+<img src="images/signages.jpg" alt="Safety Signages">
+
+<div class="product-content">
+
 <h3>Safety Signages & Posters</h3>
-<p>Warning, mandatory, prohibitory signages, floor tapes and safety boards.</p>
+
+<p>
+Warning, Mandatory, Prohibitory Signages, Floor Marking Tapes, Fire Exit Plans and Customized Safety Boards.
+</p>
+
+<span class="view-btn">View Products</span>
+
 </div>
-</div>
+
 </a>
 
-<a href="products/fire-safety.html" class="card-link">
-<div class="card">
-<img src="images/fire-safety.jpg">
-<div class="card-content">
-<h3>Fire Safety</h3>
-<p>Fire extinguishers, hydrants, sprinklers, hose reels and fire alarm systems.</p>
+
+<a href="products/fire-safety.html" class="product-card">
+
+<img src="images/fire-safety.jpg" alt="Fire Safety">
+
+<div class="product-content">
+
+<h3>Fire Safety Solutions</h3>
+
+<p>
+Fire Extinguishers, Hydrant Systems, Hose Reels, MCPs, Sprinklers and Clean Agent Fire Suppression Systems.
+</p>
+
+<span class="view-btn">View Products</span>
+
 </div>
-</div>
+
 </a>
 
-<a href="products/consultancy.html" class="card-link">
-<div class="card">
-<img src="images/consultancy.jpg">
-<div class="card-content">
+
+<a href="products/consultancy.html" class="product-card">
+
+<img src="images/consultancy.jpg" alt="Consultancy">
+
+<div class="product-content">
+
 <h3>EHS & Operations Consultancy</h3>
-<p>Environmental, operational excellence, HIRA, audits and training solutions.</p>
+
+<p>
+Environmental Compliance, Safety Audits, Risk Assessment, 5S Implementation, Waste Management and Training Services.
+</p>
+
+<span class="view-btn">View Services</span>
+
 </div>
-</div>
+
 </a>
 
 </div>
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
 
 
 
