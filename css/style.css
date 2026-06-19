@@ -474,7 +474,128 @@ font-weight:bold;
 .product-btn:hover{
 background:#007bff;
 }
+.page-banner{
+background:#0b1f3a;
+padding:90px 20px;
+text-align:center;
+color:white;
+}
 
+.about-corporate{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+padding:80px;
+align-items:center;
+background:white;
+}
+
+.about-corporate img{
+width:100%;
+border-radius:15px;
+}
+
+.about-right h2{
+font-size:42px;
+margin-bottom:20px;
+color:#0b1f3a;
+}
+
+.about-right p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+.vm-section{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:70px;
+background:#f5f7fa;
+}
+
+.vm-box{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.vm-box img{
+height:220px;
+width:100%;
+object-fit:cover;
+}
+
+.vm-box h3{
+padding:20px;
+}
+
+.vm-box p{
+padding:0 20px 20px;
+}
+
+.founder-box{
+display:grid;
+grid-template-columns:320px 1fr;
+gap:40px;
+padding:80px;
+background:white;
+align-items:center;
+}
+
+.founder-box img{
+width:100%;
+border-radius:20px;
+}
+
+.contact-modern{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:80px;
+}
+
+.contact-card-modern{
+background:white;
+padding:40px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.contact-card-modern i{
+font-size:42px;
+color:#0b1f3a;
+margin-bottom:20px;
+}
+
+.social-section{
+text-align:center;
+padding:60px;
+}
+
+.social-large{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.social-large a{
+font-size:40px;
+color:#0b1f3a;
+}
+
+@media(max-width:992px){
+
+.about-corporate,
+.founder-box,
+.vm-section{
+grid-template-columns:1fr;
+}
+
+}
 
 
 
