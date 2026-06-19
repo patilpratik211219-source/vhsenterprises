@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,205 +8,224 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<style>
-
-.products-page{
-padding:80px 8%;
-background:#f8fafc;
-min-height:100vh;
-}
-
-.products-title{
-text-align:center;
-font-size:42px;
-font-weight:700;
-margin-bottom:15px;
-color:#0f172a;
-}
-
-.products-subtitle{
-text-align:center;
-font-size:18px;
-color:#64748b;
-max-width:900px;
-margin:auto;
-margin-bottom:60px;
-}
-
-.product-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.product-card{
-background:#fff;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-text-decoration:none;
-}
-
-.product-card:hover{
-transform:translateY(-8px);
-}
-
-.product-card img{
-width:100%;
-height:250px;
-object-fit:cover;
-}
-
-.product-content{
-padding:25px;
-}
-
-.product-content h3{
-font-size:24px;
-margin-bottom:10px;
-color:#0f172a;
-}
-
-.product-content p{
-font-size:15px;
-line-height:1.7;
-color:#475569;
-}
-
-.view-btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#2563eb;
-color:white;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-}
-
-.view-btn:hover{
-background:#1d4ed8;
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-<section class="products-page">
+<header>
 
-<h1 class="products-title">
-Products & Services
-</h1>
+<div class="logo-area">
 
-<p class="products-subtitle">
-Comprehensive Industrial Safety Products, Fire Protection Solutions, Safety Signages and EHS Consultancy Services for Safer, Smarter and Compliant Workplaces.
-</p>
+<img src="images/logo.png">
 
-<div class="product-grid">
-
-<a href="products/fall-protection.html" class="product-card">
-
-<img src="images/fall-protection.jpg" alt="Fall Protection">
-
-<div class="product-content">
-
-<h3>Fall Protection Equipment & Lifeline Systems</h3>
-
-<p>
-Safety Harnesses, Anchorages, Retractable Blocks, Tripods, Vertical and Horizontal Lifeline Systems for work-at-height safety.
-</p>
-
-<span class="view-btn">View Products</span>
+<div class="logo-text">
+<h1>VHS Enterprises</h1>
+<p>Safety Beyond Compliance</p>
+</div>
 
 </div>
 
+<nav>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="products.html">Products & Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="blogs.html">Blogs</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="page-banner">
+
+<h1>Products & Services</h1>
+
+<p>
+Comprehensive Industrial Safety Products,
+Fire Protection Solutions,
+Workplace Safety Systems,
+Environmental Consultancy
+and Compliance Services.
+</p>
+
+</section>
+
+<section class="product-section">
+
+<div class="product-card">
+
+<img src="images/fall-protection.jpg">
+
+<h2>Fall Protection Equipment & Lifeline Systems</h2>
+
+<ul>
+<li>Safety Harness</li>
+<li>Retractable Fall Arrest System</li>
+<li>Confined Space Equipment – Tripod</li>
+<li>Anchorages</li>
+<li>Vertical Fall Arrest System</li>
+<li>Horizontal Lifeline System</li>
+</ul>
+
+<a href="products/fall-protection.html" class="product-btn">
+View Details
 </a>
 
-
-<a href="products/ppe.html" class="product-card">
-
-<img src="images/ppe.jpg" alt="PPE">
-
-<div class="product-content">
-
-<h3>Personal Protective Equipment</h3>
-
-<p>
-Complete PPE solutions including helmets, goggles, gloves, safety shoes, body protection, respiratory and hearing protection.
-</p>
-
-<span class="view-btn">View Products</span>
-
 </div>
 
+<div class="product-card">
+
+<img src="images/ppe.jpg">
+
+<h2>Personal Protective Equipment</h2>
+
+<ul>
+<li>Safety Helmets</li>
+<li>Safety Goggles</li>
+<li>Face Shields</li>
+<li>Safety Gloves</li>
+<li>Reflective Jackets</li>
+<li>Safety Shoes</li>
+</ul>
+
+<a href="products/ppe.html" class="product-btn">
+View Details
 </a>
 
-
-<a href="products/signages.html" class="product-card">
-
-<img src="images/signages.jpg" alt="Safety Signages">
-
-<div class="product-content">
-
-<h3>Safety Signages & Posters</h3>
-
-<p>
-Warning, Mandatory, Prohibitory Signages, Floor Marking Tapes, Fire Exit Plans and Customized Safety Boards.
-</p>
-
-<span class="view-btn">View Products</span>
-
 </div>
 
+<div class="product-card">
+
+<img src="images/signages.jpg">
+
+<h2>Safety Signages & Posters</h2>
+
+<ul>
+<li>Warning Signages</li>
+<li>Mandatory Signages</li>
+<li>Prohibitory Signages</li>
+<li>Floor Tapes</li>
+<li>Safety Boards</li>
+<li>Fire Exit Plans</li>
+</ul>
+
+<a href="products/signages.html" class="product-btn">
+View Details
 </a>
 
-
-<a href="products/fire-safety.html" class="product-card">
-
-<img src="images/fire-safety.jpg" alt="Fire Safety">
-
-<div class="product-content">
-
-<h3>Fire Safety Solutions</h3>
-
-<p>
-Fire Extinguishers, Hydrant Systems, Hose Reels, MCPs, Sprinklers and Clean Agent Fire Suppression Systems.
-</p>
-
-<span class="view-btn">View Products</span>
-
 </div>
 
+<div class="product-card">
+
+<img src="images/fire-safety.jpg">
+
+<h2>Fire Safety Systems</h2>
+
+<ul>
+<li>Fire Extinguishers</li>
+<li>Hydrant Systems</li>
+<li>Sprinklers</li>
+<li>MCP</li>
+<li>Hose Reel</li>
+<li>Clean Agent Systems</li>
+</ul>
+
+<a href="products/fire-safety.html" class="product-btn">
+View Details
 </a>
 
-
-<a href="products/consultancy.html" class="product-card">
-
-<img src="images/consultancy.jpg" alt="Consultancy">
-
-<div class="product-content">
-
-<h3>EHS & Operations Consultancy</h3>
-
-<p>
-Environmental Compliance, Safety Audits, Risk Assessment, 5S Implementation, Waste Management and Training Services.
-</p>
-
-<span class="view-btn">View Services</span>
-
 </div>
 
+<div class="product-card">
+
+<img src="images/consultancy.jpg">
+
+<h2>EHS & Operations Consultancy</h2>
+
+<ul>
+<li>Safety Audits</li>
+<li>HIRA</li>
+<li>5S Implementation</li>
+<li>Waste Management</li>
+<li>MPCB / CPCB Compliance</li>
+<li>Safety Trainings</li>
+</ul>
+
+<a href="products/consultancy.html" class="product-btn">
+View Details
 </a>
 
 </div>
 
 </section>
 
+<footer>
+
+<p>© 2026 VHS Enterprises | Safety Beyond Compliance</p>
+
+</footer>
+
+<div class="floating-icons">
+
+<a href="tel:+919156169392" class="call">
+
+<i class="fas fa-phone"></i>
+
+</a>
+
+<a href="https://wa.me/919156169392" class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="mailto:info@vhse.co.in" class="mail">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
